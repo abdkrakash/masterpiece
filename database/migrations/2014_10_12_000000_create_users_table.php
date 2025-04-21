@@ -9,7 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-   
+
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('image_path')->nullable(); // Path to the image file
             $table->enum('role', ['admin', 'customer'])->default('customer'); // دور المستخدم
             $table->timestamps();
         });
@@ -24,7 +25,7 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
-    
+
         public function down(): void
         {
             Schema::disableForeignKeyConstraints(); // تعطيل قيود المفاتيح الخارجية

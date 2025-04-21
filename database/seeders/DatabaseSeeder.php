@@ -10,13 +10,35 @@ class DatabaseSeeder extends Seeder
     /**
      * Seed the application's database.
      */
-    public function run(): void
+    public function run()
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $this->call([
+           userSeeder::class,
+            PhotographySeeder::class,
+            PhoImageSeeder::class,
+            PhoReviewSeeder::class,
+            //
+            WeddingHallSeeder::class,
+            HallImageSeeder::class,
+            HallReviewSeeder::class,
+            //
+            WeddingCakeSeeder::class,
+            WeddingCakeImageSeeder::class,
+            WeddingCakeReviewSeeder::class,
+            //
+            CarSeeder::class,
+            CarImageSeeder::class,
+            CarReviewSeeder::class,
+            //
+            BridalGroomAttireSeeder::class,
+            BgaImageSeeder::class,
+            BgaReviewSeeder::class,
+            //
+            GroomSpaSeeder::class,
+            GroomSpaImageSeeder::class,
+            GroomSpaReviewSeeder::class,
+            //
+            OrderSeeder::class,
+        ]);
     }
 }

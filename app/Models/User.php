@@ -10,6 +10,7 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable // الوراثة من Authenticatable
 {
     use HasFactory, HasApiTokens, Notifiable;
+    protected $fillable =[];
 
     public function bookings()
     {
