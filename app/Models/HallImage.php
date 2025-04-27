@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class HallImage extends Model
 {
     use HasFactory;
-    protected $fillable =[];
+    protected $fillable = ['hall_id', 'image_path'];
 }

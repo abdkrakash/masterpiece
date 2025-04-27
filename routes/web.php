@@ -77,7 +77,7 @@ Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/dashboard', function () {
     return view('dashborde.layouts.dashbord');
-});
+})->name('dashboard');
 
 Route::get('/chart', function () {
     return view('dashborde.layouts.chart');

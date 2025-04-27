@@ -1,5 +1,4 @@
-@extends('layouts.app')
-
+@extends("dashborde.dashhome")
 @section('content')
 <div class="container">
     <h1>{{ $weddingCar->name }}</h1>
@@ -12,7 +11,8 @@
     <div class="row">
         @foreach ($weddingCar->images as $image)
         <div class="col-md-4">
-            <img src="{{ asset('storage/' . $image->path) }}" class="img-fluid" alt="Wedding Car Image">
+            <img src="/{{ $image->images_path }}" class="img-fluid" alt="Car Image">
+
         </div>
         @endforeach
     </div>

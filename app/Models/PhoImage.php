@@ -9,4 +9,5 @@ class PhoImage extends Model
 {
     use HasFactory;
     protected $fillable =[];
+
 }

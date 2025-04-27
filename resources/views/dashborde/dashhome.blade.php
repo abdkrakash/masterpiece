@@ -4,14 +4,14 @@
 
 
 <div class="container-scroller">
-   
+
     <!-- partial:partials/_navbar.html -->
-    @include('dashborde.include.navbar')
+    @include('dashborde.include.nav')
 
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_sidebar.html -->
-      @include('dashborde.include.sidebar')
+      @include('dashborde.include.aside')
       @yield( 'content')
     </div>
     <!-- page-body-wrapper ends -->
@@ -20,5 +20,5 @@
 
 
 
-  
-  @include('dashborde.include.end')
+
+  @include('dashborde.include.bottom')

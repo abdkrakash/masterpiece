@@ -1,5 +1,4 @@
-@extends('layouts.app')
-
+@extends("dashborde.dashhome")
 @section('content')
 <div class="container">
     <h1>Wedding Halls</h1>
@@ -17,10 +16,10 @@
         <tbody>
             @foreach ($weddingHalls as $hall)
             <tr>
-                <td>{{ $hall->name }}</td>
-                <td>${{ number_format($hall->price, 2) }}</td>
-                <td>{{ $hall->capacity }}</td>
-                <td>{{ $hall->location }}</td>
+                <td>{{ $hall->hall_name }}</td>
+                <td>${{ number_format($hall->hall_price, 2) }}</td>
+                <td>{{ $hall->hall_capacity }}</td>
+                <td>{{ $hall->hall_location }}</td>
                 <td>
                     <a href="{{ route('wedding-halls.show', $hall->id) }}" class="btn btn-info">View</a>
                     <a href="{{ route('wedding-halls.edit', $hall->id) }}" class="btn btn-warning">Edit</a>

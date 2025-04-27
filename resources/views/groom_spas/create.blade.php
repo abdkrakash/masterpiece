@@ -1,5 +1,4 @@
-@extends('layouts.app')
-
+@extends("dashborde.dashhome")
 @section('content')
 <div class="container">
     <h1>Add New Groom Spa Service</h1>
