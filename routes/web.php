@@ -1,6 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WeddingHallController;
+use App\Http\Controllers\PhotographyController;
+use App\Http\Controllers\WeddingCarController;
+use App\Http\Controllers\WeddingCakeController;
+use App\Http\Controllers\BridalGroomAttireController;
+use App\Http\Controllers\GroomSpaController;
+use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,12 +63,9 @@ Route::get('/Services', function () {
 Route::get('/Vendors', function () {
     return view('dashborde.layouts.Vendors_Management');
 });
-Route::prefix('dashboard')->middleware('auth')->group(function () {
-    Route::get('/', [DashboardController::class, 'index'])->name('dashboard.index');
-});
+
 use App\Http\Controllers\Auth\LoginController;
 
-// مسار تسجيل الدخول
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
@@ -80,3 +85,17 @@ Route::get('/chart', function () {
 Route::get('/users', function () {
     return view('dashborde.layouts.users');
 });
+
+
+
+
+//////////////////////////////////Controllers////////////////////////////////////////////////////////
+
+Route::resource('wedding-halls', WeddingHallController::class);
+Route::resource('photography', PhotographyController::class);
+Route::resource('wedding-cars', WeddingCarController::class);
+Route::resource('wedding-cakes', WeddingCakeController::class);
+Route::resource('bridal-groom-attires', BridalGroomAttireController::class);
+Route::resource('groom-spas', GroomSpaController::class);
+Route::resource('transactions', TransactionController::class);
+Route::resource('orders', OrderController::class);

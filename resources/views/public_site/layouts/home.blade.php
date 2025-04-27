@@ -269,15 +269,15 @@
                         <img src="assets/images/home-1/blog-thumb.png" alt="blog">
                         <div class="blog-content">
                            
-                            <h3 class="blog-title"><a href="blog-details.html">Dream Venue </a></h3>
+                            <h3 class="blog-title"><a href="/blog">Dream Venue </a></h3>
                             <p class="blog-desc">Mistakes to Avoid When Choosing  a Wedding Venue</p>
                             <div class="blog-btn">
-                                <a href="#" class="open-modal-btn">CLICK HERE</a>
+                                <a href="/blog" class="open-modal-btn">CLICK HERE</a>
                             </div>
                         </div>
                     </div>
                     <div class="blog-meta-title">
-                        <h2><a href="blog-details.html">Dream Venue
+                        <h2><a href="/blog">Dream Venue
                         </a></h2>
                     </div>
                 </div>
@@ -292,12 +292,12 @@
                         <p class="blog-desc">Tips to Make Your Wedding Day Stress-Free
                         </p>
                         <div class="blog-btn">
-                          <a href="blog-details.html">CLICK HERE</a>
+                          <a href="/blog">CLICK HERE</a>
                         </div>
                     </div>
                     </div> 
                     <div class="blog-meta-title">
-                      <h2><a href="blog-details.html">Stress-Free Wedding</a></h2>
+                      <h2><a href="/blog">Stress-Free Wedding</a></h2>
                   </div>
                 </div>
               </div>
@@ -315,7 +315,7 @@
                     </div>
                     </div>
                     <div class="blog-meta-title">
-                      <h2><a href="blog-details.html"> Best Wedding</a></h2>
+                      <h2><a href="/blog"> Best Wedding</a></h2>
                   </div>
                 </div>
               </div>
@@ -334,7 +334,7 @@
                     </div>
                     </div>
                     <div class="blog-meta-title">
-                        <h2><a href="blog-details.html">Wedding Tale
+                        <h2><a href="/blog">Wedding Tale
                         </a></h2>
                     </div>
                 </div>
@@ -355,7 +355,7 @@
                     </div>
                     </div> 
                     <div class="blog-meta-title">
-                      <h2><a href="blog-details.html">Perfect Wedding Cake
+                      <h2><a href="/blog">Perfect Wedding Cake
 
                       </a></h2>
                   </div>
@@ -375,7 +375,7 @@
                     </div>
                     </div>
                     <div class="blog-meta-title">
-                      <h2><a href="blog-details.html">Your Perfect Dress</a></h2>
+                      <h2><a href="/blog">Your Perfect Dress</a></h2>
                   </div>
                 </div>
               </div>
